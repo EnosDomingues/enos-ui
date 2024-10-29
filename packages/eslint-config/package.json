@@ -1,0 +1,33 @@
+{
+  "name": "@enos-ui/eslint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": "true",
+  "keywords": [
+    "eslint",
+    "lint",
+    "linting",
+    "code-style",
+    "code-quality",
+    "style-guide",
+    "code-standards"
+  ],
+  "author": "Enos Domingues",
+  "license": "MIT",
+  "description": "Shared ESLint configuration for projects within the @enos-ui monorepo, promoting code consistency and best practices through standardized linting rules.",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.12.0",
+    "@typescript-eslint/parser": "^8.12.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.11.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "prettier": "^3.3.3"
+  }
+}

@@ -1,0 +1,17 @@
+# Ignore build artifacts
+node_modules/
+build/
+dist/
+.turbo
+
+# Ignore IDE configurations
+.vscode/
+.idea/
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore configuration files that should not be shared
+config.json
+.env

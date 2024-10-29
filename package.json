@@ -1,0 +1,13 @@
+{
+  "name": "enos-ui",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=20.15.1"
+  }
+}
