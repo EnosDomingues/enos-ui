@@ -1,0 +1,4 @@
+{
+  "extends": "@enos-ui/ts-config/react.json",
+  "include": ["src"]
+}
