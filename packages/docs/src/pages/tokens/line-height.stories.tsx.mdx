@@ -1,0 +1,35 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+import { TokensGrid } from '../../components/TokensGrid'
+import { lineHeights } from '@enos-ui/tokens'
+
+<Meta title="Tokens/Line Height" />
+
+# Line Height
+
+Line height, often referred to as leading, plays a pivotal role in typography, affecting legibility, readability, and the aesthetic feel of text. Below is an overview of the line height values used in our design system, designed to optimize user experience by balancing text density and visual comfort.
+
+<TokensGrid tokens={lineHeights}/>
+
+{/* ## Line Height Values
+
+- **Default (1.5)**: This is the standard line height for body text, ensuring a comfortable reading experience. It provides enough space between lines to prevent text from visually blending together while maintaining a compact layout.
+
+- **Compact (1.4)**: Used for scenarios where space conservation is necessary without sacrificing too much readability. Suitable for compact views, descriptions, or captions where less vertical space is desired.
+
+- **Comfort (1.6)**: Applied to text that may require longer reading sessions, like articles, blogs, or extended narratives. The increased space between lines enhances legibility, particularly in dense or complex texts.
+
+- **Heading (1.2)**: Specifically for headings and titles where a tighter line height helps in visually grouping lines of text. It ensures that headings stand out while maintaining a clear visual hierarchy with the body text.
+
+- **Display (1.1)**: For large display text or hero sections where the emphasis is on individual lines of text rather than paragraphs. This minimal spacing adds a sleek, modern look to titles and slogans.
+
+### Usage Guidelines
+
+- **Consistency**: Stick to these line heights across your application to maintain a consistent typographic rhythm, which aids in user navigation and comprehension.
+
+- **Readability**: Always consider the context in which the text appears. For technical or educational content, a larger line height might be more beneficial for comprehension.
+
+- **Screen Size**: Adjust line heights for different screen sizes. Mobile devices might require slightly more or less spacing to accommodate the different reading experiences.
+
+- **Font Pairing**: Line height can be influenced by the typeface. Some fonts require more or less leading due to their x-height or character shapes. Ensure your line heights work well with your chosen fonts.
+
+This documentation serves as a reference for designers and developers to ensure that text in our UI not only looks professional but also supports user interaction by optimizing readability and aesthetic appeal. */}
