@@ -1,7 +1,7 @@
 {
   "name": "@enos-ui/ts-config",
   "version": "1.0.0",
-  "private": "true",
+  "private": true,
   "description": "Shared TypeScript configuration for internal projects within Enos UI monorepo.",
   "keywords": [
     "typescript",
