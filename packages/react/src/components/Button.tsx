@@ -1,36 +1,98 @@
-import type { ComponentProps } from 'react'
+import type { ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 
 export const Button = styled('button', {
+  all: 'unset',
+  fontSize: 'small',
   fontFamily: '$default',
-  fontWeight: '$bold',
-  backgroundColor: '$ignite300',
-  borderRadius: '$md',
-  border: 0,
-  cursor: 'pointer',
-  color: '$white',
+  fontWeight: '$medium',
+  textAlign: 'center',
+  minWidth: '$20',
+  padding: '0 $4',
+  borderRadius: '$sm',
+  boxSizing: 'border-box',
 
-  '&:hover': {
-    backgroundColor: '$ignite500',
-    transition: 'background-color 0.2s',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '$2',
+
+  cursor: 'pointer',
+
+  '&:disabled': {
+    cursor: 'not-allowed',
+  },
+
+  svg: {
+    width: '$4',
+    height: '$4',
   },
 
   variants: {
-    size: {
-      small: {
-        fontSize: '$sm',
-        padding: '$2 $4',
+    variant: {
+      primary: {
+        color: '$white',
+        backgroundColor: '$purple500',
+
+        '&:not(:disabled):hover': {
+          color: '$black',
+          backgroundColor: '$purple300',
+          transition: 'background-color 0.2s, color 0.2s',
+        },
+
+        '&:disabled': {
+          backgroundColor: '$gray200',
+        },
       },
-      big: {
-        fontSize: '$md',
-        padding: '$3 $6',
+
+      secondary: {
+        color: '$purple500',
+        border: '2px solid $purple500',
+
+        '&:not(:disabled):hover': {
+          color: '$white',
+          backgroundColor: '$purple500',
+          transition: 'color 0.2s, background-color 0.2s',
+        },
+
+        '&:disabled': {
+          color: '$gray200',
+          borderColor: '$gray200',
+        },
+      },
+
+      tertiary: {
+        color: '$gray100',
+
+        '&:not(:disabled):hover': {
+          color: '$white',
+          transition: 'color 0.2s',
+        },
+
+        '&:disabled': {
+          color: '$gray600',
+        },
+      },
+    },
+
+    size: {
+      sm: {
+        height: '$8',
+      },
+
+      md: {
+        height: '$10',
       },
     },
   },
 
   defaultVariants: {
-    size: 'small',
+    variant: 'primary',
+    size: 'md',
   },
 })
 
-export type ButtonProps = ComponentProps<typeof Button>
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+export interface ButtonProps extends ComponentProps<typeof Button> {
+  as?: ElementType
+}
