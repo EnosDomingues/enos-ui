@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Text, TextProps } from '@enos-ui/react'
 
 export default {
-  title: 'Surfaces/Text',
+  title: 'Typografy/Text',
   component: Text,
   args: {
     children:
