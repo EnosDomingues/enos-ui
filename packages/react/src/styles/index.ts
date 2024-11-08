@@ -25,6 +25,8 @@ export const {
     width: 'space',
     minWidth: 'space',
     maxWidth: 'space',
+    minHeight: 'space',
+    maxHeight: 'space',
   },
   theme: {
     colors,
