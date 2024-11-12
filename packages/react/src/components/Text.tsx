@@ -30,7 +30,6 @@ export const Text = styled('p', {
   },
 })
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface TextProps extends ComponentProps<typeof Text> {
   as?: ElementType
 }

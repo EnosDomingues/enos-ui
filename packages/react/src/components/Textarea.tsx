@@ -32,5 +32,4 @@ export const Textarea = styled('textarea', {
   },
 })
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface TextareaProps extends ComponentProps<typeof Textarea> {}

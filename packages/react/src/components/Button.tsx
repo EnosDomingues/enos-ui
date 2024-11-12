@@ -92,7 +92,6 @@ export const Button = styled('button', {
   },
 })
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface ButtonProps extends ComponentProps<typeof Button> {
   as?: ElementType
 }

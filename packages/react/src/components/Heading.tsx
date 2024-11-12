@@ -24,7 +24,6 @@ export const Heading = styled('h2', {
   },
 })
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface HeadingProps extends ComponentProps<typeof Heading> {
   as?: ElementType
 }
